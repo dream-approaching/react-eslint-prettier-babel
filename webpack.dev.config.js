@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
@@ -6,11 +7,13 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: 'bundle.js',
   },
+  plugins: [new webpack.NamedModulesPlugin(), new webpack.HotModuleReplacementPlugin()],
   devServer: {
-    port: 8000,
+    hot: true,
+    port: 8080,
     contentBase: path.join(__dirname, './dist'),
     historyApiFallback: true,
-    host: '192.168.10.162',
+    host: '0.0.0.0',
   },
   module: {
     rules: [

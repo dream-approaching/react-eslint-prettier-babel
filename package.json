@@ -10,7 +10,7 @@
     "lint:create": "eslint --init",
     "prettier": "find . -name \"*.js\" | grep -v -f .eslintignore | xargs prettier --write",
     "dev-build": "webpack --config webpack.dev.config.js",
-    "start": "webpack-dev-server --config webpack.dev.config.js --color --progress"
+    "start": "webpack-dev-server --config webpack.dev.config.js --color"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

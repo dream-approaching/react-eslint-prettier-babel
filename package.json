@@ -1,5 +1,5 @@
 {
-  "name": "my test",
+  "name": "myTest",
   "version": "1.0.0",
   "description": "my test",
   "main": "index.js",
@@ -8,7 +8,8 @@
   "scripts": {
     "lint": "eslint src",
     "lint:create": "eslint --init",
-    "prettier": "find . -name \"*.js\" | grep -v -f .eslintignore | xargs prettier --write"
+    "prettier": "find . -name \"*.js\" | grep -v -f .eslintignore | xargs prettier --write",
+    "dev-build": "webpack --config webpack.dev.config.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

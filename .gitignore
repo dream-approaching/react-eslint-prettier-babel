@@ -1,0 +1,26 @@
+# Exclude compiled files
+build
+/lib
+/.next
+/.eslintcache
+/docs/export
+/tmp
+/coverage
+/.nyc_output
+
+# OS files
+.DS_STORE
+yarn.lock
+# Screenshors generated for Argos-CI
+/test/regressions/screenshots
+/test/selenium-output
+
+# npm files
+node_modules
+package-lock.json
+*.log
+
+# Editor files
+.idea
+.vscode
+

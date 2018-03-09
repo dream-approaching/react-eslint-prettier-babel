@@ -15,6 +15,7 @@ module.exports = {
     historyApiFallback: true,
     host: '0.0.0.0',
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
